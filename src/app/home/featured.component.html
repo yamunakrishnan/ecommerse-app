@@ -1,0 +1,36 @@
+<div class="title m-t-2"><span>{{title}}</span></div>
+    <div class="product-slider owl-controls-top-offset">
+    <div class="box-product-outer" *ngFor="let product of productlist">
+    <div class="box-product">
+    <div class="img-wrapper">
+        <a href="detail.html">
+        <img alt="Product" src="{{product.imageUrl}}">
+        </a>
+        <div class="tags">
+        <span class="label-tags"><span class="label label-danger arrowed">Sale</span></span>
+        <span class="label-tags"><span class="label label-default arrowed">Collection</span></span>
+        </div>
+        <div class="option">
+        <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+        <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+        <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+        </div>
+    </div>
+    <h6><a href="detail.html">{{product.name}}</a></h6>
+    <div class="price">
+       <div>{{getSalePrice(product.price,product.percentDiscount) | currency:'USD':true:'1.2-2'}} <span class="label-tags"><span class="label label-primary arrowed">-{{product.percentDiscount}}%</span></span></div>
+       <span class="price-old">{{product.price | currency:'USD':true:'1.2-2'}}</span>
+    </div>
+    <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+        <a href="#">(5 reviews)</a>
+    </div>
+    </div>
+    </div>
+
+    </div>
+

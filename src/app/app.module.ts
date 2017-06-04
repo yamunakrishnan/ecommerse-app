@@ -7,9 +7,15 @@ import {RouterModule} from '@angular/router';
 import { AppRouterModule } from './router';
 import { AppComponent } from './app.component';
 import {HomeComponent} from './home/home.component';
+import {CaressolComponent} from './home/caressol.component';
 import {ProductComponent} from './product/product.component';
+import {NewarrivalComponent} from './home/newarrival.component';
+import {BestsellingComponent} from './home/bestselling.component';
+import {FeaturedComponent} from './home/featured.component';
+import {CollectionComponent} from './home/collection.component';
 import {CartComponent} from './shoppingcart/cart.component';
 import {CheckoutComponent} from './checkout/checkout.component';
+import {TestComponent} from './work/test.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,13 @@ import {CheckoutComponent} from './checkout/checkout.component';
     HomeComponent,
     ProductComponent,
     CartComponent,
-    CheckoutComponent,  
+    CheckoutComponent, 
+    CaressolComponent,
+    NewarrivalComponent,
+    BestsellingComponent,
+    FeaturedComponent,
+    CollectionComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
