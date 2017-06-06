@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import {HomeComponent} from './home/home.component';
 import {CaressolComponent} from './home/caressol.component';
 import {ProductComponent} from './product/product.component';
+import {FilterComponent} from './product/filter.component';
+import {ProductListComponent} from './product/productlist.component';
 import {NewarrivalComponent} from './home/newarrival.component';
 import {BestsellingComponent} from './home/bestselling.component';
 import {FeaturedComponent} from './home/featured.component';
@@ -16,6 +18,7 @@ import {CollectionComponent} from './home/collection.component';
 import {CartComponent} from './shoppingcart/cart.component';
 import {CheckoutComponent} from './checkout/checkout.component';
 import {TestComponent} from './work/test.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import {TestComponent} from './work/test.component';
     BestsellingComponent,
     FeaturedComponent,
     CollectionComponent,
-    TestComponent
+    TestComponent,
+    FilterComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
